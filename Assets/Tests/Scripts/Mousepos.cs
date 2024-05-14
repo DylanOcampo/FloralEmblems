@@ -9,13 +9,20 @@ public class Mousepos: MonoBehaviour {
     public Vector3 targetPos;
     public bool isMoving;
     const int MOUSE = 0;
+
+    public bool isMouseOver = false;
 	// Use this for initialization1
 	void Start () {
 
         targetPos = transform.position;
         isMoving = false;
 	}
-	
+
+    public void MouseOver(bool _value){
+        isMouseOver = _value;
+    }
+
+
 	// Update is called once per frame
 	void Update () {
 	
@@ -26,7 +33,10 @@ public class Mousepos: MonoBehaviour {
         if(isMoving)
         {
             MoveObject();
+            return;
         }
+
+        
 	}
     void SetTarggetPosition()
     {
@@ -41,7 +51,7 @@ public class Mousepos: MonoBehaviour {
     }
     void MoveObject()
     {
-        transform.LookAt(targetPos);
+        
         transform.position = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
 
         if (transform.position == targetPos)
