@@ -16,7 +16,7 @@ public class BoquetObject
 
 [Serializable]
 public class Meaning{
-    public string _meaning;
+    public string meaningText;
     public Sprite image;
     public meaningType reference;
 }
@@ -29,10 +29,15 @@ public enum meaningType{
     White,
     Blue,
     Purple,
+    Green,
+    Orange,
+    Cielo,
     Small,
     Big,
     Cut,
-    UnCut
+    UnCut,
+    Few,
+    many
 
 }
 
