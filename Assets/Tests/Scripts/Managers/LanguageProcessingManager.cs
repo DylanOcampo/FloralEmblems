@@ -4,28 +4,27 @@ using UnityEngine;
 
 public class LanguageProcessingManager : MonoBehaviour
 {
-    private static LanguageProcessingManager _instance;
-
-	public static LanguageProcessingManager instance
-	{
-		get
-		{
-			if (_instance == null)
-			{
-				_instance = FindAnyObjectByType<LanguageProcessingManager>();
-			}
-			return _instance;
-		}
-	}
+	public SO_BouquetList so_bouquetList;
+	public SO_MessageList so_messageList;
 
     //cosas que tienen que ser privadas
-    public List<string> userMessage = new List<string>();
-    public List<string>  currentMessage = new List<string>();
+	public List<message> messageList= new List<message>();
+    public string[] currentMessage;
 
-    //Cosas que sin ppublicas
+    //Cosas que si son ppublicas
     public List<BoquetObject>  currentBoquet = new List<BoquetObject>();
-	
-    public void UpdateCurrentMessage(List<string> _newMessage){
+
+	private void Start() {
+		messageList = so_messageList.messageObjectContainer;
+	}
+
+	public void SetNewMessage(){
+		GameManager.instance.messageToPlay.text = messageList[0].userText;
+		currentMessage = messageList[0].processingText.Split(" ");
+		messageList.RemoveAt(0);
+	}
+
+    public void UpdateCurrentMessage(string[] _newMessage){
         currentMessage = _newMessage;
     }
 

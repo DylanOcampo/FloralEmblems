@@ -15,6 +15,15 @@ public class BoquetObject
 }
 
 [Serializable]
+public class message{
+    public string userText;
+    public string processingText;
+    public difficulty Difficulty;
+    
+}
+
+
+[Serializable]
 public class Meaning{
     public string meaningText;
     public Sprite image;
@@ -46,4 +55,11 @@ public enum componentType{
     Plant,
     Paper,
     Ribbon
+}
+
+[Serializable]
+public enum difficulty{
+    Easy,
+    Medium,
+    Hard
 }
