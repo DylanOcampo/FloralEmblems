@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LanguageProcessingManager : MonoBehaviour
@@ -35,20 +36,34 @@ public class LanguageProcessingManager : MonoBehaviour
 	}
 
 	public void SetNewMessage(){
+		currentBoquet.Clear();
 		GameManager.instance.messageToPlay.text = messageList[currentMessageListPosition].userText;
 		currentMessage = messageList[currentMessageListPosition].processingText.Split(" ");
 		currentMessageListPosition++;
 	}
 
-	public void AddObjectToBouquet(BouquetObject _BoObject ){
+	public void AddObjectToBouquet(BouquetObject _BoObject, GameObject _flower ){
+		if(_flower == null){
+			return;
+		}
+		if(currentBoquet.Contains( _BoObject )){
+			return;
+		}
+		
 		currentBoquet.Add(_BoObject);
 		if(CheckCurrentBoquet()){
-			
+			GameManager.instance.NextMessage();
 		}
 	}
 
 	public void RemoveObjectToBouquet(BouquetObject _BoObject ){
+		if(!currentBoquet.Contains( _BoObject )){
+			return;
+		}
 		currentBoquet.Remove(_BoObject);
+		if(CheckCurrentBoquet()){
+			GameManager.instance.NextMessage();
+		}
 	}
 
     public void UpdateCurrentMessage(string[] _newMessage){
@@ -56,24 +71,26 @@ public class LanguageProcessingManager : MonoBehaviour
     }
 
 	public bool CheckCurrentBoquet(){
+		if(currentBoquet.Count != currentMessage.Length){
+			return false;
+		}
+
 		List<string> _text = new List<string>();
 		foreach (BouquetObject item in currentBoquet)
 		{
 			_text.Add(item.currentMeaning.meaningText);
 		}
 
-		if(_text.ToArray() == currentMessage){
-			return true;
-		}else{
-			return false;
+
+
+		for (int i = 0; i < _text.Count; i++)
+		{
+			if(_text[i] != currentMessage[i]){
+				return false;
+			}
+			
 		}
-
-
-	}
-
-	private List<BouquetObject> FormatBoquetMeaning(List<BouquetObject> _currentBoquet){
-
-		return _currentBoquet;
+		return true;
 	}
 
 }

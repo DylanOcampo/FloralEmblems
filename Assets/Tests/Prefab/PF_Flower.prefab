@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 2225845441549274040}
   m_Layer: 0
   m_Name: PF_Flower
-  m_TagString: Untagged
+  m_TagString: Flower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,8 +305,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDragging: 0
-  xvalues: {x: 0, y: 0}
-  yvalues: {x: 0, y: 0}
+  xvalues: {x: -7.5, y: 7.5}
+  yvalues: {x: -3.5, y: 13.5}
 --- !u!58 &3368503260215453340
 CircleCollider2D:
   m_ObjectHideFlags: 0
