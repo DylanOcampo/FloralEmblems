@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public LanguageProcessingManager _languageProcessingManager;
 
     private static GameManager _instance;
 
@@ -21,23 +20,24 @@ public class GameManager : MonoBehaviour
 		}
 	}
     
-    public GameObject MainMenu;
+    public GameObject MainMenu, FlowerContainer;
 
     //Test stuff vvvvvvv
     public GameObject GameTest;
     public TextMeshPro messageToPlay;
 
-    public List<BouquetObjectContainer> BouquetsToSpawn = new List<BouquetObjectContainer>();
-
-
-    public void InitializeGame(){
-
+    public void NextMessage(){
+        LanguageProcessingManager.instance.SetNewMessage();
+        foreach (Transform child in FlowerContainer.transform)
+        {
+            Destroy(child.gameObject) ;
+        }
     }
 
     public void OnClick_InitializeGameTest(){
         MainMenu.SetActive(false);
         GameTest.SetActive(true);
-        _languageProcessingManager.SetNewMessage();
+        LanguageProcessingManager.instance.SetNewMessage();
     }
 
 }

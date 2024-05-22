@@ -6,8 +6,21 @@ using UnityEngine;
 
 public class BookManager : MonoBehaviour
 {
+    private static BookManager _instance;
+
+	public static BookManager instance
+	{
+		get
+		{
+			if (_instance == null)
+			{
+				_instance = FindAnyObjectByType<BookManager>();
+			}
+			return _instance;
+		}
+	}
     public int PagNumber = 0;
-    private SO_BouquetList so_bouquetList;
+    public GameObject PF_Flower;
 
     public SpriteRenderer mainFlower;
     public TextMeshPro flowerName;
@@ -15,13 +28,23 @@ public class BookManager : MonoBehaviour
     public List<SpriteRenderer> FlowerList = new List<SpriteRenderer>();
     public List<TextMeshPro> TextList = new List<TextMeshPro>();
 
+    public bool DebugMode = true;
+
     private void Start() {
-        so_bouquetList = GameManager.instance._languageProcessingManager.so_bouquetList;
         FlowerPage();
     }
 
+    public void SpawnFlower(int _value){
+        BouquetObject _boquetObject = LanguageProcessingManager.instance.so_bouquetList.bouquetObjectContainers[PagNumber];
+        _boquetObject.currentMeaning = _boquetObject.meanings[_value];
+        GameObject instance = GameObject.Instantiate(PF_Flower);
+        instance.transform.SetParent(GameManager.instance.FlowerContainer.transform, false);
+
+        instance.GetComponent<BouquetObjectContainer>().Initialize(_boquetObject);
+    }
+
     private void FlowerPage(){
-        BoquetObject _boquetObject = so_bouquetList.bouquetObjectContainers[PagNumber];
+        BouquetObject _boquetObject = LanguageProcessingManager.instance.so_bouquetList.bouquetObjectContainers[PagNumber];
         flowerName.text = _boquetObject.name;
         mainFlower.sprite = _boquetObject.currentMeaning.image;
 
@@ -48,8 +71,8 @@ public class BookManager : MonoBehaviour
             PagNumber = 0;
         }
 
-        if(PagNumber > so_bouquetList.bouquetObjectContainers.Count-1){
-            PagNumber = so_bouquetList.bouquetObjectContainers.Count-1;
+        if(PagNumber > LanguageProcessingManager.instance.so_bouquetList.bouquetObjectContainers.Count-1){
+            PagNumber = LanguageProcessingManager.instance.so_bouquetList.bouquetObjectContainers.Count-1;
         }
         FlowerPage();
     }

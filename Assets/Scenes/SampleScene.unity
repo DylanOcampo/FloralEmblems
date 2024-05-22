@@ -133,6 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 88423589}
   - component: {fileID: 88423590}
+  - component: {fileID: 88423591}
+  - component: {fileID: 88423592}
   m_Layer: 0
   m_Name: Flower (1)
   m_TagString: Untagged
@@ -212,6 +214,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &88423591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88423588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 1
+  _interface: 3
+--- !u!61 &88423592
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88423588}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &102237829
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,6 +456,8 @@ GameObject:
   m_Component:
   - component: {fileID: 105230796}
   - component: {fileID: 105230797}
+  - component: {fileID: 105230798}
+  - component: {fileID: 105230799}
   m_Layer: 0
   m_Name: Flower (6)
   m_TagString: Untagged
@@ -472,6 +537,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &105230798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105230795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 6
+  _interface: 3
+--- !u!61 &105230799
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105230795}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &122687764
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,82 +802,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 215870208}
   m_maskType: 0
---- !u!1001 &388985028
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1942222472}
-    m_Modifications:
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5507105693693448761, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: xvalues.x
-      value: -7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5507105693693448761, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: xvalues.y
-      value: 7.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5507105693693448761, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: yvalues.x
-      value: -3.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5507105693693448761, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: yvalues.y
-      value: 13.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 8486908331611153714, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      propertyPath: m_Name
-      value: PF_Flower
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3285463970871020335, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
 --- !u!1 &442521748
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +812,8 @@ GameObject:
   m_Component:
   - component: {fileID: 442521749}
   - component: {fileID: 442521750}
+  - component: {fileID: 442521751}
+  - component: {fileID: 442521752}
   m_Layer: 0
   m_Name: Flower (2)
   m_TagString: Untagged
@@ -841,6 +893,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &442521751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442521748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 2
+  _interface: 3
+--- !u!61 &442521752
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442521748}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &542325819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,11 +1125,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 542325821}
   m_maskType: 0
---- !u!4 &566857800 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5284488646816324414, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
-  m_PrefabInstance: {fileID: 388985028}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &572732019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1290,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2120497149}
+  - {fileID: 1643408049}
+  - {fileID: 1993074299}
   - {fileID: 1770254170}
   - {fileID: 542325820}
   m_Father: {fileID: 1123992811}
@@ -1427,7 +1537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &697162738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1617,6 +1727,8 @@ GameObject:
   m_Component:
   - component: {fileID: 771241061}
   - component: {fileID: 771241062}
+  - component: {fileID: 771241063}
+  - component: {fileID: 771241064}
   m_Layer: 0
   m_Name: Flower (4)
   m_TagString: Untagged
@@ -1696,6 +1808,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &771241063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771241060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 4
+  _interface: 3
+--- !u!61 &771241064
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771241060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &809311618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1879,8 @@ GameObject:
   m_Component:
   - component: {fileID: 809311619}
   - component: {fileID: 809311620}
+  - component: {fileID: 809311621}
+  - component: {fileID: 809311622}
   m_Layer: 0
   m_Name: Flower (3)
   m_TagString: Untagged
@@ -1785,6 +1960,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &809311621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809311618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 3
+  _interface: 3
+--- !u!61 &809311622
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809311618}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &834489068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +2066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PagNumber: 0
+  PF_Flower: {fileID: 8486908331611153714, guid: 931bcf91e8b217c409f60d1aa8d69d67, type: 3}
   mainFlower: {fileID: 2120497151}
   flowerName: {fileID: 542325822}
   FlowerList:
@@ -1852,6 +2089,7 @@ MonoBehaviour:
   - {fileID: 215870209}
   - {fileID: 1792190254}
   - {fileID: 1381213045}
+  DebugMode: 1
 --- !u!1 &871164378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,11 +2209,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb5f82dca33d454b9529137742d8fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _languageProcessingManager: {fileID: 978048265}
   MainMenu: {fileID: 697162737}
+  FlowerContainer: {fileID: 1942222471}
   GameTest: {fileID: 1123992810}
   messageToPlay: {fileID: 643450285}
-  BouquetsToSpawn: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,19 +2351,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   so_bouquetList: {fileID: 11400000, guid: 5a3f97b75c60f714cb24e5ddcf30c6ae, type: 2}
   so_messageList: {fileID: 11400000, guid: fd2a227ba4e24a94885b2ab1ec979214, type: 2}
-  messageList: []
+  messageList:
+  - userText: I love you
+    processingText: love you
+    Difficulty: 0
+  - userText: Do you want to eat breakfast with me
+    processingText: 'eat sunrise you ? '
+    Difficulty: 1
+  - userText: Do you want to eat breakfast with me
+    processingText: 'eat sunrise you ? '
+    Difficulty: 1
   currentMessage: []
-  currentBoquet:
-  - name: 
-    typeOfComponent: 0
-    meanings:
-    - meaningText: 
-      image: {fileID: 0}
-      reference: 0
-    currentMeaning:
-      meaningText: 
-      image: {fileID: 0}
-      reference: 0
+  currentBoquet: []
 --- !u!1 &996276699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,12 +2490,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1123992811}
   m_Layer: 0
-  m_Name: TestGame
+  m_Name: _TestGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1123992811
 Transform:
   m_ObjectHideFlags: 0
@@ -2289,6 +2525,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1158635218}
   - component: {fileID: 1158635219}
+  - component: {fileID: 1158635220}
+  - component: {fileID: 1158635221}
   m_Layer: 0
   m_Name: Flower (8)
   m_TagString: Untagged
@@ -2368,6 +2606,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1158635220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158635217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 8
+  _interface: 3
+--- !u!61 &1158635221
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158635217}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1192540929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,6 +2898,7 @@ GameObject:
   - component: {fileID: 1315658144}
   - component: {fileID: 1315658147}
   - component: {fileID: 1315658146}
+  - component: {fileID: 1315658148}
   m_Layer: 0
   m_Name: FlowerPlacer
   m_TagString: Untagged
@@ -2719,6 +3019,18 @@ BoxCollider2D:
   m_Size: {x: 0.20358406, y: 0.32}
   m_EdgeRadius: 0
 --- !u!114 &1315658147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315658143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526f45715e0b599488a8d9706de1ce0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1315658148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3075,6 +3387,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1403620934}
   - component: {fileID: 1403620935}
+  - component: {fileID: 1403620936}
+  - component: {fileID: 1403620937}
   m_Layer: 0
   m_Name: Flower
   m_TagString: Untagged
@@ -3154,6 +3468,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1403620936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403620933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 0
+  _interface: 3
+--- !u!61 &1403620937
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403620933}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1406790830
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,6 +3539,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1406790831}
   - component: {fileID: 1406790832}
+  - component: {fileID: 1406790833}
+  - component: {fileID: 1406790834}
   m_Layer: 0
   m_Name: Flower (7)
   m_TagString: Untagged
@@ -3243,6 +3620,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1406790833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406790830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 7
+  _interface: 3
+--- !u!61 &1406790834
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406790830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1477911099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3762,7 +4200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Up: 1
   Book: 0
-  _bookManager: {fileID: 0}
+  FlowerValue: 0
+  _interface: 1
 --- !u!212 &1640471260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3843,11 +4282,11 @@ Transform:
   m_GameObject: {fileID: 1643408048}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.70710695, w: -0.7071067}
-  m_LocalPosition: {x: 3.75, y: -2.52, z: 2.0220158}
-  m_LocalScale: {x: 3.9481776, y: 3.9481776, z: 3.9481776}
+  m_LocalPosition: {x: 2.5757, y: -1.1385, z: 2.0220158}
+  m_LocalScale: {x: 3.948178, y: 3.9481776, z: 3.9481776}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1770254170}
+  m_Father: {fileID: 626387191}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!61 &1643408050
 BoxCollider2D:
@@ -3908,7 +4347,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Up: 0
   Book: 1
-  _bookManager: {fileID: 834489070}
+  FlowerValue: 0
+  _interface: 2
 --- !u!212 &1643408052
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3971,6 +4411,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1710328544}
   - component: {fileID: 1710328545}
+  - component: {fileID: 1710328546}
+  - component: {fileID: 1710328547}
   m_Layer: 0
   m_Name: Flower (5)
   m_TagString: Untagged
@@ -4050,6 +4492,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1710328546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710328543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e4d7ca272cc9745bf7ec31b4430832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Up: 0
+  Book: 0
+  FlowerValue: 5
+  _interface: 3
+--- !u!61 &1710328547
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1710328543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!1 &1770254169
 GameObject:
   m_ObjectHideFlags: 0
@@ -4087,8 +4590,6 @@ RectTransform:
   - {fileID: 105230796}
   - {fileID: 1406790831}
   - {fileID: 1158635218}
-  - {fileID: 1643408049}
-  - {fileID: 1993074299}
   m_Father: {fileID: 626387191}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4495,7 +4996,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Up: 0
   Book: 0
-  _bookManager: {fileID: 0}
+  FlowerValue: 0
+  _interface: 1
 --- !u!212 &1930374429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4576,8 +5078,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 566857800}
+  m_Children: []
   m_Father: {fileID: 1123992811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985419566
@@ -4778,12 +5279,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993074298}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.48, y: -2.68, z: 2.0220158}
-  m_LocalScale: {x: 3.9481776, y: 3.9481776, z: 3.9481776}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -2.6543, y: -1.2985001, z: 2.0220158}
+  m_LocalScale: {x: 3.948178, y: 3.9481776, z: 3.9481776}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1770254170}
+  m_Father: {fileID: 626387191}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!61 &1993074300
 BoxCollider2D:
@@ -4844,7 +5345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Up: 0
   Book: 0
-  _bookManager: {fileID: 834489070}
+  FlowerValue: 0
+  _interface: 2
 --- !u!212 &1993074302
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 [Serializable]
-public class BoquetObject
+public class BouquetObject
 {
     public string name;
     public  componentType typeOfComponent;

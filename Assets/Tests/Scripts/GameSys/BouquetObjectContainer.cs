@@ -6,14 +6,17 @@ using TMPro;
 public class BouquetObjectContainer : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
-    public BoquetObject self;
+    public BouquetObject self;
     public TextMeshPro debugText;
-    public bool Debug;
+    public bool Debug = true;
 
 
-    public void Initialize(BoquetObject _currentObject){
+    public void Initialize(BouquetObject _currentObject){
         self = _currentObject;
         spriteRenderer.sprite = self.currentMeaning.image;
-        debugText.text = self.currentMeaning.meaningText;
+        if(Debug){
+            debugText.text = self.currentMeaning.meaningText;
+        }
+        
     }
 }

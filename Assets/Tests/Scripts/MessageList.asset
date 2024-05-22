@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: MessageList
   m_EditorClassIdentifier: 
   messageObjectContainer:
-  - userText: i love you
+  - userText: I love you
     processingText: love you
     Difficulty: 0
+  - userText: i miss you
+    processingText: miss you
+    Difficulty: 0
+  - userText: do you love me?
+    processingText: love i ?
+    Difficulty: 0
+  - userText: My Father has the money
+    processingText: father Family money have
+    Difficulty: 1
+  - userText: Can we go to the library
+    processingText: We go read place ?
+    Difficulty: 1
   - userText: Do you want to get breakfast?
-    processingText: you want go ingest sunrise?
+    processingText: You want go ingest sunrise?
     Difficulty: 2
