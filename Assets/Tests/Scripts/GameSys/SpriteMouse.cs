@@ -1,13 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum InterfaceType
-{
-    None,
-    CameraMove,
-    BookManagerFlower,
-    BookManagerSpawn
-}
+
 public class SpriteMouse : MonoBehaviour
 {
     public bool Up;

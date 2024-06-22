@@ -29,6 +29,23 @@ public class Meaning{
     public Sprite image;
     public meaningType reference;
 }
+[Serializable]
+public enum InterfaceType
+{
+    None,
+    CameraMove,
+    BookManagerFlower,
+    BookManagerSpawn
+}
+
+[Serializable]
+public enum ToolType
+{
+    Scissors,
+    Tweezers,
+    Cable,
+    lighter
+}
 
 [Serializable]
 public enum meaningType{
